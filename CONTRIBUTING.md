@@ -130,13 +130,13 @@ Validation checks mission fields, localized content and locale-key resolution, c
 Based on `src/systems/codeValidator.js`. Every listed type currently exists in code.
 
 | Type | Required Fields | Example |
-|---|---|---|
+|||---|---|
 | `contains_pattern` | `pattern` | `{ type: 'contains_pattern', pattern: 'env.storage()' }` |
 | `has_function` | `name` (`params` optional) | `{ type: 'has_function', name: 'transfer', params: ['env', 'from', 'to', 'amount'] }` |
 | `returns_type` | `function`, `returnType` | `{ type: 'returns_type', function: 'hello', returnType: 'Vec<Symbol>' }` |
 | `has_attribute` | `attribute` | `{ type: 'has_attribute', attribute: 'contractimpl' }` |
 | `uses_type` | `typeName` | `{ type: 'uses_type', typeName: 'Address' }` |
-| `storage_operation` | `operation` (`get` \\| `set` \\| `has` \\| `remove`) | `{ type: 'storage_operation', operation: 'set' }` |
+| `storage_operation` | `operation` (`get` \\ | `set` \\ | `has` \\ | `remove`) | `{ type: 'storage_operation', operation: 'set' }` |
 | `no_pattern` | `pattern` | `{ type: 'no_pattern', pattern: 'unwrap()' }` |
 | `has_struct` | `name` | `{ type: 'has_struct', name: 'Guardian' }` |
 | `balanced_braces` | _(none)_ | `{ type: 'balanced_braces' }` |
@@ -152,7 +152,7 @@ Notes:
 ```bash
 npm run dev              # Start local dev server (Vite)
 npm run test             # Run unit/system tests (Vitest)
-npm run test:e2e         # Run end-to-end tests (Playwright)
+npm run test:e2e         # Run end-to-end tests +Playwright)
 npm run test:visual      # Run visual regression tests
 npm run lint             # Lint all files (ESLint)
 npm run lint:fix         # Auto-fix lint issues
@@ -187,7 +187,6 @@ Browse the open issues on GitHub and pick one that interests you. Every issue is
 - `easy`: small, self-contained changes with clear scope. Good first contribution.
 - `medium`: more involved changes that touch multiple files or require familiarity with the codebase.
 - `hard`: large or delicate changes that need deeper understanding of the game engine, validator, or build pipeline.
-
 If you are new to the project, start with an `easy` issue.
 
 ### Getting Assigned
