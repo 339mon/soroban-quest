@@ -255,6 +255,12 @@
       "log": {
         "exported": "Progreso de la aventura exportado",
         "imported": "Progreso de la aventura importado desde archivo"
+      },
+      "toast": {
+        "exported": "¡Progreso exportado correctamente!",
+        "imported": "¡Progreso importado correctamente!",
+        "importFailed": "No se pudo importar el archivo. Verifica el formato.",
+        "resetDone": "🗑️ Progreso restablecido."
       }
     }
   },
@@ -365,6 +371,16 @@
       "modalTitle": "Introducción del capítulo",
       "beginChapter": "Comenzar capítulo {{number}}"
     }
+  },
+  "certificate": {
+    "button": "🏅 Obtener certificado",
+    "downloading": "Generando…",
+    "buttonAriaLabel": "Descargar certificado de finalización para {{title}}",
+    "ofCompletion": "Certificado de finalización",
+    "thisCertifies": "Esto certifica que",
+    "hasCompleted": "ha completado exitosamente",
+    "missions": "{{count}} misiones completadas",
+    "completedOn": "Completado el {{date}}"
   },
   "missionMap": {
     "title": "Mapa de misiones",
