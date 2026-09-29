@@ -130,7 +130,7 @@ Validation checks mission fields, localized content and locale-key resolution, c
 Based on `src/systems/codeValidator.js`. Every listed type currently exists in code.
 
 | Type | Required Fields | Example |
-||---|---|---|
+|---|---|---|
 | `contains_pattern` | `pattern` | `{ type: 'contains_pattern', pattern: 'env.storage()' }` |
 | `has_function` | `name` (`params` optional) | `{ type: 'has_function', name: 'transfer', params: ['env', 'from', 'to', 'amount'] }` |
 | `returns_type` | `function`, `returnType` | `{ type: 'returns_type', function: 'hello', returnType: 'Vec<Symbol>' }` |
@@ -186,7 +186,8 @@ Browse the open issues on GitHub and pick one that interests you. Every issue is
 
 - `easy`: small, self-contained changes with clear scope. Good first contribution.
 - `medium`: more involved changes that touch multiple files or require familiarity with the codebase.
-- `hard`: large or delicate changes that need deeper understanding of the game engine, validator, or build pipeline.
+- `hard`: large or delicate changes that need deeper understanding of the game engine, validator, or build pipeline.
+
 If you are new to the project, start with an `easy` issue.
 
 ### Getting Assigned
